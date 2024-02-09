@@ -28,7 +28,7 @@ RUN unzip sdk-tools.zip && rm sdk-tools.zip
 RUN mv tools $ANDROID_SDK_TOOLS
 
 # Download Flutter SDK
-RUN git clone https://github.com/flutter/flutter.git
+RUN git clone -b v1.12.13+hotfix.8 https://github.com/flutter/flutter.git
 
 # Download sdk build tools and platform tools
 WORKDIR $ANDROID_SDK_TOOLS/bin
